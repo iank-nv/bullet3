@@ -705,6 +705,7 @@ void btGImpactCollisionAlgorithm::gimpacttrimeshpart_vs_plane_collision(
 		{
 			if (swapped)
 			{
+				m_part1 = vi;
 				addContactPoint(body1Wrap, body0Wrap,
 								vertex,
 								-plane,
@@ -712,6 +713,7 @@ void btGImpactCollisionAlgorithm::gimpacttrimeshpart_vs_plane_collision(
 			}
 			else
 			{
+				m_part0 = vi;
 				addContactPoint(body0Wrap, body1Wrap,
 								vertex,
 								plane,
